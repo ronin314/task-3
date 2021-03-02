@@ -1,0 +1,29 @@
+<tr>
+    <th>№</th>
+    <th>alpha_two_code</th>
+    <th>country</th>
+    <th>state-province</th>
+    <th>domains</th>
+    <th>name</th>
+    <th>web_pages</th>
+</tr>
+{{#each this}}
+
+<tr class="university-info">
+    <td></td>
+    <td>{{alpha_two_code}}</td>
+    <td>{{country}}</td>
+    <td>{{state-province}}</td>
+    {{!-- {{#each domain}} --}}
+    <td>
+        {{domains}}
+    </td>
+    {{!-- {{/each}} --}}
+    <td>{{name}}</td>
+    <td>
+        {{!-- {{#each web-page}} --}}
+        <a href="{{web_pages}}">{{web_pages}}</a>
+        {{!-- {{/each}} --}}
+    </td>
+</tr>
+{{/each}}
